@@ -8,16 +8,190 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+    <style>
+     :root {
+         /* colors */
+         --color-background: #151515;
+         --color-sugar: #f2f1d5;
+         --color-A: #ffba36;
+         --color-T: #26f826;
+         --color-C: #439AD9;
+         --color-G: #E96451;
+     }
+    </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				  <section>
+              <section data-background-iframe="assets/dna/index.html">
+                  <h2 class="r-fit-text">
+                      A Deepdive Into <span style="color: var(--color-G)">CSS</span>
+                  </h2>
+                  <h3>
+                      <span style="color: var(--color-C);">Patterns</span> and <span style="color: var(--color-A);">Techniques</span>
+                  </h3>
+              </section>
+              <section data-background-iframe="https://codepen.io/shadow-scientist/embed/eYgPjxX?height=265&theme-id=dark&default-tab=result">
+                  <div class="fragment">
+                      <img src="assets/shadow-scientist-dna-anim.svg" />
+                      <div>
+                          <a href="https://bit.ly/3dUlADg">https://bit.ly/3dUlADg</a>
+                      </div>
+                  </div>
+              </section>
+         </section>
+         <section data-background-iframe="https://keithclark.co.uk/labs/css-fps/nojs/">
+             <div class="fragment">
+                 <img src="assets/css-3d-engine-keith-clark.svg" />
+                 <div>
+                     <a href="https://bit.ly/3nn0vV0">https://bit.ly/3nn0vV0</a>
+                 </div>
+             </div>
+         </section>
+				 <section>
+             <section>
+                 Introduce yourself
+             </section>
+             <section>
+                 Where you're from
+             </section>
+             <section>
+                 Where you are now
+             </section>
+             <section>
+                 Why you're qualified to talk about this
+             </section>
+         </section>
+         <section data-background-iframe="assets/dna/index.html">
+             <h1>Part <span style="color: var(--color-C)">One</span></h1>
+             <h4>A brief history of how we got here.</h4>
+         </section>
+        <section>
+            <section>
+                <h2>
+                    The Birth of <span style="color: var(--color-C)">CSS</span>
+                </h2>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>
+                    The Browser <span style="color: var(--color-G)">Wars</span>
+                </h2>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>
+                    The Rise of the <span style="color: var(--color-A)">Responsive</span> Web
+                </h2>
+            </section>
+            <section data-background="">
+                <img src="assets/this-is-not-the-web/this-is-not-web.png" />
+            </section>
+            <section>
+                <img src="assets/this-is-not-the-web/this-is-the-web.png" />
+            </section>
+            <section>
+                <img src="assets/this-is-not-the-web/this-will-bethe-web.png" />
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Progressive <span style="color: var(--color-T)">Enhancement</span></h2>
+            </section>
+            <section>
+                <img src="assets/m-m.jpg" />
+            </section>
+        </section>
+        <section data-background-iframe="assets/dna/index.html">
+             <h1>Part <span style="color: var(--color-A)">Two</span></h1>
+             <h4>A recap of CSS First Principles.</h4>
+         </section>
+         <section>
+             <section>
+                 Specificity, inheritance and the cascade
+             </section>
+             <section>
+                 The box model and margin collapse
+             </section>
+             <section>
+                 The containing block
+             </section>
+             <section>
+                 The stacking context
+             </section>
+             <section>
+                 The block formatting context
+             </section>
+             <section>
+                 Initial, computed, used and actual values
+             </section>
+             <section>
+                 Selectors
+             </section>
+             <section>
+                 Media queries
+             </section>
+             <section>
+                 @supports
+             </section>
+             <section>
+                 CSS Custom Attributes
+             </section>
+         </section>
+         <section data-background-iframe="assets/dna/index.html">
+             <h1>Part <span style="color: var(--color-T)">Three</span></h1>
+             <h4>Methodologies</h4>
+         </section>
+         <section>
+             <section>
+                 BEM
+             </section>
+             <section>
+                 SMACSS
+             </section>
+             <section>
+                 ITCSS
+             </section>
+             <section>
+                 CSS-in-JS
+             </section>
+         </section>
+         <section data-background-iframe="assets/dna/index.html">
+             <h1>Part <span style="color: var(--color-G)">Four</span></h1>
+             <h4>Patterns and Techniques</h4>
+         </section>
+         <section>
+             <section>
+                 The checkbox hack
+             </section>
+             <section>
+                 Aspect ratios
+             </section>
+             <section>
+                 Responsive background image
+             </section>
+             <section>
+                 Button states
+             </section>
+             <section>
+                 Form and input states
+             </section>
+             <section>
+                 Mobile-first CSS Grid page layout with fallback
+             </section>
+         </section>
+         <section data-background-iframe="assets/dna/index.html">
+             <h1 style="color: var(--color-G)">FIN</h1>
+             <h5>Now go make some cool things!</h5>
+         </section>
 			</div>
 		</div>
 
@@ -25,6 +199,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/

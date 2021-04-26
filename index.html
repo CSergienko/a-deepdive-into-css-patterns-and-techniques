@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>A Deepdive Into CSS Patterns and Techniques</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -189,8 +189,14 @@
              </section>
          </section>
          <section data-background-iframe="assets/dna/index.html">
-             <h1 style="color: var(--color-G)">FIN</h1>
-             <h5>Now go make some cool things!</h5>
+             <h1 style="color: var(--color-G)" class="fragment">FIN</h1>
+             <h5 class="fragment">Now go make some cool things!</h5>
+             <div class="fragment">
+                 <img src="assets/presentation-qr.svg" />
+                 <div>
+                     <a href="https://bit.ly/3gKwDRh">https://bit.ly/3gKwDRh</a>
+                 </div>
+             </div>
          </section>
 			</div>
 		</div>
@@ -206,6 +212,9 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+          keyboard: true,
+          history: true,
+          help: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

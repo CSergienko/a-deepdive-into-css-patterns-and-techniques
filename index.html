@@ -49,6 +49,26 @@
               <span style="color: var(--color-blue)">Patterns</span> and
               <span style="color: var(--color-yellow)">Techniques</span>
             </h3>
+            <aside class="notes">
+                <p>
+                    Welcome to a deepdive into CSS patterns and techniques!
+                </p>
+                <p>
+                    Some of you might be thinking it's a bit odd to have a CSS talk at a conference like this.
+                </p>
+                <p>
+                    As far as tech goes, CSS isn't particularly exciting or "sexy".
+                </p>
+                <p>
+                    But, if you're here, it's probably because you're having to use it and you feel like you might have something to learn.
+                </p>
+                <p>
+                    Now that the web is becoming the ubiquitous platform, more and more developers are having to come to terms with the web stack.
+                </p>
+                <p>
+                    So, we're going to dive into some design philosophies, patterns and tricks which I've picked up over the years, which I hope will be valuable to you.
+                </p>
+            </aside>
           </section>
           <section
             data-background-iframe="https://codepen.io/shadow-scientist/embed/eYgPjxX?height=265&theme-id=dark&default-tab=result"
@@ -59,6 +79,18 @@
                 <a href="https://bit.ly/3dUlADg">https://bit.ly/3dUlADg</a>
               </div>
             </div>
+
+            <aside class="notes">
+                <p>
+                    CSS is a lot more powerful than people give it credit for.
+                </p>
+                <p>
+                    People use it to create art, for example. Such as this animation of a strand of DNA.
+                </p>
+                <p>
+                    I did not make this, but I love the visual metaphor of diving into the DNA of CSS and HTML.
+                </p>
+            </aside>
           </section>
         </section>
         <section
@@ -70,27 +102,70 @@
               <a href="https://bit.ly/3nn0vV0">https://bit.ly/3nn0vV0</a>
             </div>
           </div>
+          <aside class="notes">
+              <p>
+                  Here's something crazy. This is an experiment using pure CSS and HTML to create a 3d environment.
+              </p>
+              <p>
+                  All of the geometry, textures, shadows, everything is handled with CSS.
+              </p>
+              <p>
+                  I'm sure there are a few people in the audience wondering "Why? What kind of maniac would think this is a good idea?"
+                  It's definitely not going to be replacing Unity any time soon, but it's a cool proof of concept regardless.
+              </p>
+              <p>
+                  It works fine in Chrome. It bugs out heavily in Firefox, and none of the shadows work in Safari.
+              </p>
+          </aside>
         </section>
         <section>
-          <section>Introduce yourself</section>
-          <section>Where you're from</section>
-          <section>Where you are now</section>
-          <section>Why you're qualified to talk about this</section>
+            <section>
+                <h2><span style="color: var(--color-green)">Hello</span>, world!</h2>
+                <p class="fragment">My name is Christian, and I'm a web developer.</p>
+                
+                <aside class="notes">
+                    <p>
+                        Now that I hopefully have your attention, hello!
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <p>I've lived in South Africa for 29 years.</p>
+                <p class="fragment">
+                    I'm now living in Sofia, Bulgaria.</br>
+                    <b>Здравейте!</b>
+                </p>
+            </section>
+            <section>
+                <p>I'm currently working as a React developer on Commerzbank's <b>FX Live Trader Web</b> platform.</p>
+                <p class="fragment">(<b>We're hiring</b> Java developers!)</p>
+                <aside class="notes">
+                    <p>
+                        We are porting a legacy Java application to the web platform.
+                    </p>
+                    <p>
+                        We're looking for talented Java developers, so hit me up after the talk if you'd like to apply!
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <p>I've been working with CSS since 2008.</p>
+                <p class="fragment">Thanks for giving me the opportunity to share some of my experience with you all!</p>
+            </section>
         </section>
 
         <section data-background-iframe="assets/dna/index.html">
           <h1>Part <span style="color: var(--color-part-one)">One</span></h1>
-          <h4>A brief history of how we got here.</h4>
-        </section>
-        <section>
-          <h2>
-            The Birth of <span style="color: var(--color-part-one)">CSS</span>
-          </h2>
-        </section>
-        <section>
-          <h2>
-            The Browser <span style="color: var(--color-part-one)">Wars</span>
-          </h2>
+          <h4>The DNA of HTML and CSS</h4>
+          <aside class="notes">
+              <p>
+                  One cannot talk about CSS without talking about HTML.
+              </p>
+
+              <p>
+                  These two technologies are very closely tied to one another, so throughout this presentation we will be discussing aspects of both.
+              </p>
+          </aside>
         </section>
         <section>
           <section>
@@ -101,12 +176,55 @@
           </section>
           <section data-background="">
             <img src="assets/this-is-not-the-web/this-is-not-web.png" />
+            <aside class="notes">
+                <p>
+                    This USED to be the web. Everything was made for the desktop screen.
+                </p>
+                <p>
+                    When I started, a lot of websites were chopped up images living inside of HTML tables.
+                </p>
+                <p>
+                    Browser support was awful. IE6 and 7 were still around. IE8 was only just starting to die, and IE9 was new and shiny.
+                </p>
+            </aside>
           </section>
           <section>
             <img src="assets/this-is-not-the-web/this-is-the-web.png" />
+            <aside class="notes">
+                <p>
+                    Then this happened. The release of the iPhone resulted in a flood of smart phones and tablets on the market.
+                </p>
+                <p>
+                    In emerging markets, these devices were and are still the primary way most of the population accesses the internet.
+                </p>
+                <p>
+                    Quite simply, you could not build for the web anymore without supporting mobile.
+                </p>
+            </aside>
           </section>
           <section>
             <img src="assets/this-is-not-the-web/this-will-bethe-web.png" />
+            <aside class="notes">
+                <p>
+                    Now we're entering this phase. Everything is smart and internet capable.
+                </p>
+                <p>
+                    Cross-browser support hasn't gone away, it's just changing year on year.
+                </p>
+            </aside>
+          </section>
+          <section>
+              <p>Making a usable experience across all of this is hard.</p>
+              <ul>
+                  <li class="fragment">Differences in browser engines</li>
+                  <li class="fragment">Differences in OSes</li>
+                  <li class="fragment">Differences in device capabilities</li>
+              </ul>
+              <aside class="notes">
+                  <p>Cross-browser differences used to be a lot worse, but they're still there.</p>
+                  <p>OSes have different ways of managing things like font rendering, color space, etc.</p>
+                  <p>Across devices, issues like dealing with different pixel densities and low specs (particularly for mobile) is common.</p>
+              </aside>
           </section>
         </section>
         <section>
@@ -115,10 +233,48 @@
               Progressive
               <span style="color: var(--color-part-one)">Enhancement</span>
             </h2>
+            <p><span class="fragment">Progressive enhancement is a design philosophy</span> <span class="fragment">that provides a baseline of essential content and functionality to as many users as possible</span><span class="fragment">, while delivering the best possible experience only to users of the most modern browsers that can run all the required code.</span></p>
+            <aside class="notes">
+                <p>Progressive enhancement is a design philosophy that provides a baseline of essential content and functionality to as many users as possible, while delivering the best possible experience only to users of the most modern browsers that can run all the required code.</p>
+            </aside>
           </section>
           <section>
             <img src="assets/m-m.jpg" />
+            <ul>
+                <li class="fragment">Start with accessible, well structured and semantic HTML content.</li>
+                <li class="fragment">Do as much as you can with CSS.</li>
+                <li class="fragment">Use JavaScript to enhance the experience.</li>
+            </ul>
+            <aside class="notes">
+                <p>
+                    The basic idea is that, if you start by building a usable experience for the crappiest platform you have to support, everything else after that is easier.
+                </p>
+                <p>
+                    Regardless of whether you're using server-side templates, doing serverless, using Angular, Vue, React, Svelte, or whatever else, these fundamentals are still at play.
+                </p>
+                <p>
+                    
+                </p>
+            </aside>
           </section>
+          <section>
+              <p>Take advantage of the built-in fault tolerance of <span style="color: var(--color-red);">HTML</span> and <span style="color: var(--color-blue);">CSS</span>, and use it to your advantage!</p>
+              <p class="fragment"><span style="color: var(--color-red);">HTML</span> using unsupported tags will still work, and they will be treated as divs.</p>
+              <p class="fragment"><span style="color: var(--color-blue);">CSS</span> will ignore any property it doesn't support.</p>
+              <p class="fragment">No exceptions thrown, they just keep on going.</p>
+          </section>
+          <aside class="notes">
+              <p>
+                  There is a reason that websites from the 1990s still work in modern browsers.
+              </p>
+              <p>
+                  A core principle of both HTML, CSS and JavaScript is "don't break the internet". The old will always continue working,
+                  and using newer features will not break the old ones.
+              </p>
+              <p>
+                  This is also why CSS in particular can be so unintuitive and confusing.
+              </p>
+          </aside>
         </section>
 
         <section data-background-iframe="assets/dna/index.html">
@@ -132,17 +288,13 @@
             </section>
             <section>
                 <h3>Element Selectors</h3>
-                <pre><code data-line-numbers="1|5|10">h1 {
+                <pre><code data-line-numbers="1,5">h1 {
   color: red;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   margin: 1.5em 0 1em;
-}
-
-p, blockquote {
-  line-height: 1.2;
 }
                 </code></pre>
             </section>
@@ -330,7 +482,7 @@ a {
         </section>
 
         <section data-background-iframe="assets/dna/index.html">
-          <h1>Part <span style="color: var(--color-part-four)">Four</span></h1>
+          <h1>Part <span style="color: var(--color-part-four)">Three</span></h1>
           <h4>Patterns and Techniques</h4>
           <h5 class="fragment">Finally...</h5>
         </section>
